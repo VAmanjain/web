@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh + (400vh)); /* Ensure canvas covers all sections */
+  }
+  
+  .section {
+    height: calc(400vh / 5); /* Each section takes up equal height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+  }
+  
+  .section:nth-child(odd) {
+    background-color: rgba(34, 51, 255, 0.7); /* Light blue for odd sections */
+  }
+  
+  .section:nth-child(even) {
+    background-color: rgba(66, 135, 245, 0.7); /* Light cyan for even sections */
+  }
+  
+  .content {
+    max-width: 800px; /* Limit width of content */
+  }
+  
+  .content h2 {
+    font-size: 2.5rem; /* Heading size */
+  }
+  
+  .content p {
+    font-size: 1.2rem; /* Paragraph size */
+  }
